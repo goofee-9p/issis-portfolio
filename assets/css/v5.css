@@ -501,3 +501,5 @@ ul, ol { list-style: none; }
 @media (max-width: 960px) { .cards { gap: 24px; } }
 .cards .card-img { aspect-ratio: 6 / 7; }
 .card-label .chip:not(.live) { background: #fff; }
+.closing p { font-weight: 700; font-synthesis: weight; }
+.closing p + p { -webkit-text-stroke: 0.4px currentColor; }
