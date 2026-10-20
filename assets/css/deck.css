@@ -182,3 +182,7 @@ body.deck { margin: 0; }
 .s-seg2 .seg-note { font-size: 12px; }
 .s-seg2 .slide-in { justify-content: center; }
 .s-seg2 .seg { flex: none; }
+.s-seg1 .seg-eyebrow { font-size: 14px; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.s-seg1 .seg { flex: none; }
+.s-seg1 .seg-top { height: auto; }
+.s-seg1 .seg-stage { height: 430px; }
