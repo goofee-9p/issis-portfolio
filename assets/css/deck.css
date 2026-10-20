@@ -141,3 +141,14 @@ body.deck { margin: 0; }
 .slide .foot-dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .slide .stat-folders { flex-wrap: wrap; }
 .slide .folder { width: 200px; flex: none; }
+/* 슬라이드에서는 연락처 창과 커서를 쓰지 않는다 */
+.slide .tasks-map { min-height: 420px; }
+.slide .card-label h3 { white-space: normal; }
+.md { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 44px; height: 100%; align-items: center; }
+.md-text .chip { display: inline-block; }
+.md-text .case-title { margin-top: 12px; font-size: 26px; line-height: 1.3; }
+.md-text .more h2 { margin-top: 22px; font-size: 16px; font-weight: 700; }
+.slide .md-text .mini-rows li { grid-template-columns: 70px minmax(0, 1fr); gap: 12px; padding: 12px 0; font-size: 13.5px; }
+.md-fig { display: flex; flex-direction: column; gap: 10px; }
+.md-fig .banner.render { margin: 0; border-radius: 10px; overflow: hidden; }
+.md-fig .cap { margin: 0; font-size: 11.5px; }
