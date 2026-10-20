@@ -152,3 +152,9 @@ body.deck { margin: 0; }
 .md-fig { display: flex; flex-direction: column; gap: 10px; }
 .md-fig .banner.render { margin: 0; border-radius: 10px; overflow: hidden; }
 .md-fig .cap { margin: 0; font-size: 11.5px; }
+.s-closing .slide-in { display: flex; align-items: center; justify-content: center; }
+.s-closing .closing { margin: 0; padding: 0; border: 0; }
+.s-closing .closing p:first-child { font-size: 64px; }
+.s-closing .closing p + p { font-size: 32px; }
+.s-now .slide-in { display: flex; align-items: center; }
+.s-now .feature { margin-top: 0; width: 100%; }

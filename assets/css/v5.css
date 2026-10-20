@@ -375,3 +375,16 @@ ul, ol { list-style: none; }
   .nav-act { gap: 6px; }
   .nav-act .pill { height: 32px; padding: 0 12px; font-size: 13px; }
 }
+.case-grid-after { margin-top: 24px; }
+.case-wide + .case-grid-after .more { margin-top: 0; }
+@media (max-width: 960px) { .case-grid-after > div:first-child { display: none; } }
+
+/* 노란 큰 카드 */
+.feature.yellow .feature-panel { background: var(--butter); }
+.feature.yellow .photo-panel img { box-shadow: 0 10px 30px rgba(29, 29, 31, .12); }
+.card-label .chip.live { display: inline-flex; }
+
+/* 마지막 한마디: 궁서체 */
+.closing { margin-top: 72px; padding: 56px 0 8px; border-top: 1px solid var(--line); text-align: center; font-family: "Gungsuh", "GungSeo", "궁서", "궁서체", "Song Myung", serif; color: var(--ink); }
+.closing p:first-child { font-size: clamp(34px, 4.4vw, 52px); line-height: 1.2; letter-spacing: -0.01em; }
+.closing p + p { margin-top: 14px; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.5; }
