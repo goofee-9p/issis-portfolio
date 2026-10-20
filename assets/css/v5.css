@@ -471,3 +471,33 @@ ul, ol { list-style: none; }
   .bins li { font-size: 12.5px; padding: 8px 4px; }
 }
 .res.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* 고객 유형 분석: 메인 요약 카드와 가림 상세 페이지 */
+.plan-card { margin-top: 32px; }
+.plan-head { max-width: 860px; }
+.plan-brand { margin-top: 10px; font-size: 14px; color: var(--mute); }
+.plan-lead { margin-top: 18px; font-size: 17px; line-height: 1.7; color: var(--ink-2); }
+.gate { position: relative; margin-top: 32px; }
+.gate-body { max-height: 1000px; overflow: hidden; }
+.gate-body .seg { margin-top: 0; }
+.gate-veil { position: absolute; left: 0; right: 0; bottom: 0; height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 14px; padding-bottom: 36px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .55) 45%, #fff 82%); }
+.gate-veil::before, .gate-veil::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+.gate-veil::before { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 35%); mask-image: linear-gradient(180deg, transparent 0%, #000 35%); }
+.gate-veil::after { -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); -webkit-mask-image: linear-gradient(180deg, transparent 30%, #000 70%); mask-image: linear-gradient(180deg, transparent 30%, #000 70%); }
+.gate-veil { isolation: isolate; }
+.gate-veil p { position: relative; font-size: 16px; font-weight: 700; color: var(--ink); }
+.gate-cta { position: relative; display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 26px; border: 0; border-radius: 999px; background: var(--ink); color: #fff; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 10px 24px rgba(29, 29, 31, .18); transition: background .2s ease, transform .2s ease; }
+.gate-cta:hover { background: var(--accent); transform: translateY(-2px); }
+.plan-page .case-nav { margin-top: 24px; }
+@media (max-width: 960px) { .gate-body { max-height: 1500px; } }
+@media (max-width: 560px) { .gate-body { max-height: 1380px; } .gate-veil { height: 380px; } }
+
+/* 작은 카드 정리: 간격을 넓히고 겹을 줄인다 */
+.cards { gap: 36px 32px; }
+.card-label { position: absolute; left: 0; right: 0; bottom: 0; background: none; border-radius: 0; padding: 0 24px 22px; }
+.card-label h3 { font-size: 17px; }
+.card-img .win-body img { box-shadow: none; border-radius: 2px; }
+.card-img .win-body img[src$=".png"] { box-shadow: none; }
+@media (max-width: 960px) { .cards { gap: 24px; } }
+.cards .card-img { aspect-ratio: 6 / 7; }
+.card-label .chip:not(.live) { background: #fff; }
