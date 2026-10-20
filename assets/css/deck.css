@@ -158,3 +158,27 @@ body.deck { margin: 0; }
 .s-closing .closing p + p { font-size: 32px; }
 .s-now .slide-in { display: flex; align-items: center; }
 .s-now .feature { margin-top: 0; width: 100%; }
+
+/* 이시스 고객 세그먼트 (2장) */
+.s-seg1 .slide-in, .s-seg2 .slide-in { padding: 44px 80px 52px; display: flex; flex-direction: column; }
+.s-seg1 .sec-title, .s-seg2 .sec-title { font-size: 26px; }
+.s-seg1 .seg-lead { margin-top: 8px; font-size: 14.5px; max-width: 1000px; }
+.s-seg1 .seg, .s-seg2 .seg { margin-top: 16px; padding: 18px; gap: 12px; flex: 1; }
+.s-seg1 .seg-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); height: 100%; }
+.s-seg1 .seg-cube { align-items: center; }
+.s-seg1 .seg-cube > .seg-k { align-self: flex-start; }
+.s-seg1 .seg-stage { width: auto; height: 470px; }
+.s-seg1 .seg-ax { font-size: 15px; }
+.s-seg1 .seg-p { font-size: 12px; }
+.s-seg2 .seg { align-content: start; }
+.s-seg2 .seg-group { padding: 16px 18px 18px; }
+.s-seg2 .seg-types { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.s-seg2 .seg-type { padding: 12px 12px 14px; }
+.s-seg2 .seg-type dd { font-size: 13px; }
+.s-seg2 .seg-bottom { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
+.s-seg2 .seg-flow { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.s-seg2 .seg-panel { padding: 14px 16px 16px; }
+.s-seg2 .seg-metrics li { padding: 7px 12px; }
+.s-seg2 .seg-note { font-size: 12px; }
+.s-seg2 .slide-in { justify-content: center; }
+.s-seg2 .seg { flex: none; }
