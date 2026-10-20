@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>포트폴리오 구병기</title>
+<meta name="description" content="구병기 포트폴리오 - 이시스코스메틱 CRM/그로스 마케터 지원">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/v5.css?v=20261020k">
+
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="me" href="index.html#top"><img src="assets/img/photo_face.jpg" alt="구병기 사진" width="36" height="36"><span>구병기</span></a>
+    <nav class="links">
+      <a href="index.html#about">소개</a>
+      <a href="index.html#career">경력</a>
+      <a href="index.html#brands">브랜드</a>
+      <a href="index.html#cases">케이스</a>
+      <a href="index.html#tools">도구</a>
+      <a href="index.html#issis">이시스</a>
+    </nav>
+    <a class="pill" href="index.html#contact">연락하기</a>
+  </div>
+</header>
+
+
+<main class="case">
+  <div class="wrap">
+    <div class="case-top"><a class="back" href="index.html#cases"><span class="arr">←</span><span>케이스 목록</span></a><p class="case-step">02 / 07</p></div>
+      <figure class="banner contain mint-bg"><img src="assets/img/ga4_sano_sources.jpg?v=2" alt="sano GA4 세션 소스와 매체별 트래픽 표" width="1146" height="549"></figure>
+      <p class="cap">sano GA4 트래픽 획득 보고서(2026년 7월 1일~10월 19일)입니다. 보라 상자는 로그인 복귀, 빨간 상자는 개발 주소에서 생긴 세션입니다.</p>
+    <div class="case-grid">
+      <aside class="side">
+          <div><p class="side-k">브랜드</p><p>sano, 광고 운영 AI 에이전트(개인 프로젝트)</p></div>
+          <div><p class="side-k">맡은 일</p><p>GA4 이벤트 설계, 데이터 진단과 수정</p></div>
+          <div><p class="side-k">기간</p><p>2026.07 — 현재</p></div>
+          <div><p class="side-k">도구</p><p>GA4, 메타 픽셀과 서버 전환, 자체 DB</p></div>
+      </aside>
+      <article class="case-body">
+        <p class="chip mint">GA4 진단</p>
+        <h1 class="case-title">GA4에서 잘못 집계된 유입을 찾아 측정 방식을 다시 설계했습니다.</h1>
+        <h2>상황</h2>
+        <p>직접 만든 광고 운영 AI 에이전트 sano를 메타 광고로 알리며 사전 신청과 가입을 받았습니다. 그런데 GA4, 메타 픽셀, 실제 가입 기록의 숫자가 서로 맞지 않았습니다.</p>
+        <h2>한 일</h2>
+        <p>숫자가 어긋나는 원인 네 가지를 찾아 측정 방식을 수정했습니다. 랜딩 조회부터 사전 신청, 가입, 매체 연결, 결제 시작까지 이벤트를 새로 설계하고, 실제 방문과 행동을 구분해 볼 수 있도록 했습니다.</p>
+        <section class="results">
+          <h2>결과</h2>
+          <div class="res">
+            <div class="res-cell"><p class="res-k">GA4가 메타보다 많이 집계한 광고 유입</p><p class="res-v">1.8배</p><p class="res-s">데이터센터 트래픽이 섞인 탓</p></div>
+            <div class="res-cell"><p class="res-k">로그인 복귀로 바뀐 유입 경로</p><p class="res-v">129세션</p><p class="res-s">accounts.google.com 추천으로 잡힘</p></div>
+            <div class="res-cell"><p class="res-k">새로 설계한 GA4 이벤트</p><p class="res-v">13종</p><p class="res-s">맞춤 측정기준 7개 등록</p></div>
+          </div>
+          <p class="note">* 2026년 7월 1일부터 10월 19일까지 sano GA4 속성과 2026년 10월 작업 기록 기준입니다.</p>
+        </section>
+        <section class="more">
+          <h2>찾은 원인과 고친 방법</h2>
+          <ul class="mini-rows">
+            <li><p class="mini-k">구글 로그인 복귀</p><p>구글 로그인 후 돌아온 방문이 accounts.google.com 추천 유입으로 바뀌었습니다. GA4의 원치 않는 추천 목록에 로그인과 결제 도메인을 추가하고, 가입자의 첫 유입 경로를 DB에 따로 기록했습니다.</p></li>
+            <li><p class="mini-k">데이터센터 트래픽</p><p>최근 7일 활성 사용자의 절반이 데이터센터가 있는 도시에서 집계됐고, GA4의 광고 유입은 메타의 1.8배였습니다. 화면이 실제로 보였을 때만 기록하는 랜딩 이벤트를 새로 설계했습니다.</p></li>
+            <li><p class="mini-k">개발 주소 방문 혼입</p><p>배포 미리보기 주소와 로컬 개발 주소의 방문이 GA4에 섞였습니다. 추적 도구가 실제 서비스 주소에서만 작동하도록 수정했습니다.</p></li>
+            <li><p class="mini-k">픽셀 가입 누락</p><p>실제 가입 3건 중 메타 픽셀에 기록된 가입은 0건이었습니다. 서버 전환(CAPI)을 연동하고 브라우저와 서버에서 같은 이벤트 ID를 사용해 중복 제거까지 확인했습니다.</p></li>
+          </ul>
+          <h2>설계한 이벤트</h2>
+          <ol class="flow">
+            <li>랜딩 조회</li><li>섹션 도달</li><li>버튼 클릭</li><li>사전 신청</li><li>로그인 시작</li><li>가입</li><li>매체 연결</li><li>결제 시작</li>
+          </ol>
+          <ul class="mini-rows">
+            <li><p class="mini-k">고친 뒤 처음 본 숫자</p><p>사람 방문을 기준으로 측정한 첫날인 10월 12일, 랜딩을 본 29명 중 버튼을 누른 사람은 1명이었습니다.</p></li>
+          </ul>
+        </section>
+        <section class="apply"><p class="apply-k">이시스에서는</p><p>이시스코스메틱 자사몰에서도 카카오싱크 가입, 구매, 리필 재구매를 이벤트로 설계하겠습니다. 카카오 로그인 후에도 최초 유입 경로가 유지되는지 확인하겠습니다.</p></section>
+      </article>
+    </div>
+    <nav class="case-nav">
+      <a href="case-a.html"><span class="arr">←</span><span>이전 케이스</span></a>
+      <a href="case-b.html"><span>다음 케이스</span><span class="arr">→</span></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot-in">
+      <p class="foot-name">구병기</p>
+      <dl class="foot-dl">
+        <div><dt>전화</dt><dd><a href="tel:01063403531">010-6340-3531</a></dd></div>
+        <div><dt>메일</dt><dd><a href="mailto:goofee.9p@gmail.com">goofee.9p@gmail.com</a></dd></div>
+        <div><dt>거주</dt><dd>부산</dd></div>
+        <div><dt>합류</dt><dd>입사 확정 후 4주 안에 합류할 수 있습니다(협의 가능).</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="foot-bar"><div class="wrap"><p>광고주 수치는 공개 가능한 범위만 담았습니다. COSRX 대시보드 화면은 실제 데이터 대신 생성 데이터를 넣고 숫자를 흐리게 처리했습니다. <span>첫 화면 그림은 실제 작업물을 참고해 AI로 생성했습니다.</span></p><p>© 2026 <span>구병기</span></p></div></div>
+</footer>
+
+</body>
+</html>
