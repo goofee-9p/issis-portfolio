@@ -543,3 +543,5 @@ ul, ol { list-style: none; }
   .prop-sec { margin-top: 56px; }
   .prop-b2b { padding: 20px; }
 }
+.prop-tasks p.prop-data { padding: 12px 14px; border-left: 3px solid var(--accent); background: var(--lilac); border-radius: 0 8px 8px 0; color: var(--ink); font-weight: 600; }
+.prop-tasks .prop-link { margin-left: 0; }
