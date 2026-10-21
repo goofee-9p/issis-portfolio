@@ -503,3 +503,43 @@ ul, ol { list-style: none; }
 .card-label .chip:not(.live) { background: #fff; }
 .closing p { font-weight: 700; font-synthesis: weight; }
 .closing p + p { -webkit-text-stroke: 0.4px currentColor; }
+
+/* 자사몰 성장과제 제안 (숨김 페이지) */
+.prop-hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px; align-items: center; margin-bottom: 24px; }
+.prop-img { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--band); }
+.prop-img img { display: block; width: 100%; height: auto; }
+.prop-head .case-title { margin-top: 14px; }
+.prop-sec { margin-top: 72px; }
+.prop-h { display: flex; align-items: baseline; gap: 14px; font-size: 24px; line-height: 1.35; padding-bottom: 16px; border-bottom: 1.5px solid var(--line-strong); }
+.prop-n { font-size: 14px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.prop-lead { margin-top: 18px; max-width: 760px; color: var(--ink-2); }
+.prop-list { margin-top: 8px; }
+.prop-list li { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--ink-2); }
+.prop-k { font-weight: 700; color: var(--ink); }
+.prop-scroll { margin-top: 20px; overflow-x: auto; }
+.prop-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; }
+.prop-table th, .prop-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prop-table th { font-size: 12px; font-weight: 700; color: var(--ink-2); background: var(--band); }
+.prop-table tbody tr:first-child td { background: var(--lilac); font-weight: 600; }
+.prop-table td:first-child { font-weight: 600; white-space: nowrap; }
+.prop-tasks { margin-top: 8px; list-style: none; padding: 0; }
+.prop-tasks li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.prop-tn { width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font-size: 13px; font-weight: 700; }
+.prop-tasks h3 { font-size: 18px; }
+.prop-job { margin-top: 6px; display: inline-block; font-size: 12px; font-weight: 600; color: var(--ink-2); background: var(--butter); border-radius: 6px; padding: 4px 8px; }
+.prop-tasks p:not(.prop-tn):not(.prop-job) { margin-top: 10px; font-size: 15px; color: var(--ink-2); }
+.prop-link { display: inline-flex; gap: 6px; margin-left: 4px; color: var(--accent); font-weight: 600; }
+.prop-close { margin-top: 28px; padding: 18px 20px; border-radius: var(--radius); background: var(--band); font-size: 15px; font-weight: 600; }
+.prop-seg { margin-top: 24px; }
+.prop-b2b { margin-top: 32px; padding: 28px; border-radius: var(--radius); background: var(--band); }
+.prop-b2b h3 { font-size: 18px; }
+.prop-b2b > p { margin-top: 8px; font-size: 15px; color: var(--ink-2); max-width: 760px; }
+.prop-b2b .prop-list li:last-child { border-bottom: 0; }
+.foot-quiet { color: inherit; text-decoration: none; cursor: default; }
+@media (max-width: 860px) {
+  .prop-hero { grid-template-columns: 1fr; gap: 24px; }
+  .prop-img { max-width: 420px; }
+  .prop-list li { grid-template-columns: 1fr; gap: 6px; }
+  .prop-sec { margin-top: 56px; }
+  .prop-b2b { padding: 20px; }
+}
